@@ -4,7 +4,6 @@ from random import choice, randint, shuffle, sample
 from pyperclip import copy
 from json import load, dump
 import hash_password as hp
-import os
 
 def search_password():
 	website = website_entry.get().lower()
@@ -86,9 +85,7 @@ win.title('Password Manager')
 win.config(padx=50, pady=20)
 
 canvas = Canvas(width=200, height=200)
-# logo = PhotoImage(file='logo.png')
-logo = PhotoImage(file=os.path.join(os.getcwd(),"logo.png"))
-
+logo = PhotoImage(file='logo.png')
 canvas.create_image(100,100, image=logo)
 canvas.grid(row=0, column=0, columnspan=3)
 
