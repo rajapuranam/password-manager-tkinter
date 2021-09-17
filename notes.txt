@@ -1,8 +1,0 @@
-Password manager app using Python Tkinter module
-
-Store and retrive passwords locally.
-1) Generates 20 character long random password.
-2) Provides option for hashing the password and then save it.
-3) Search username and password using website name. 
-4) Generated password will be copied to clipboard automatically.
-5) uses JSON file to store credentials (hashed password)
